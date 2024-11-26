@@ -16,3 +16,13 @@ canvas {
     border: 1px solid #ccc;
     padding: 10px;
 }
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
