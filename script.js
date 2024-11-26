@@ -1,3 +1,4 @@
+// Dados para o gráfico de Leitura Global
 const data = [
     {
         x: ['Ficção', 'Não-Ficção', 'Fantasia', 'Romance', 'Biografias'],
@@ -31,6 +32,7 @@ const layout = {
 // Exibe o gráfico na seção com id 'grafico'
 Plotly.newPlot('grafico', data, layout);
 
+// Dados para o gráfico de Leitura no Colégio Morelli
 const dataMorelli = [
     {
         x: ['Ficção', 'Não-Ficção', 'Fantasia', 'Romance', 'Infantojuvenil'],
@@ -44,3 +46,22 @@ const dataMorelli = [
 
 const layoutMorelli = {
     title: {
+        text: 'Distribuição de Leitura no Colégio Morelli (2024)',
+        font: { family: 'Russo One', size: 24 }
+    },
+    xaxis: {
+        title: 'Categoria de Livro',
+        titlefont: { family: 'Roboto', size: 18 },
+        tickfont: { family: 'Roboto', size: 14 }
+    },
+    yaxis: {
+        title: 'Percentagem (%)',
+        titlefont: { family: 'Roboto', size: 18 },
+        tickfont: { family: 'Roboto', size: 14 }
+    },
+    plot_bgcolor: '#f8f9fa',
+    paper_bgcolor: '#f8f9fa'
+};
+
+// Exibe o gráfico na seção com id 'grafico-morelli'
+Plotly.newPlot('grafico-morelli', dataMorelli, layoutMorelli);
