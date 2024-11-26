@@ -1,7 +1,7 @@
 const data = [
     {
         x: ['Ficção', 'Não-Ficção', 'Fantasia', 'Romance', 'Biografias'],
-        y: [45, 30, 12, 8, 5], // Percentagens de livros lidos em 2024
+        y: [45, 30, 12, 8, 5], // Percentagens de livros lidos no mundo em 2024
         type: 'bar',
         marker: {
             color: ['#ff4500', '#ff6a33', '#ff8f66', '#ffb399', '#ffd6cc']
@@ -30,3 +30,17 @@ const layout = {
 
 // Exibe o gráfico na seção com id 'grafico'
 Plotly.newPlot('grafico', data, layout);
+
+const dataMorelli = [
+    {
+        x: ['Ficção', 'Não-Ficção', 'Fantasia', 'Romance', 'Infantojuvenil'],
+        y: [40, 20, 25, 10, 5], // Percentagens de livros lidos no Colégio Morelli em 2024
+        type: 'bar',
+        marker: {
+            color: ['#ff4500', '#ff6a33', '#ff8f66', '#ffb399', '#ffd6cc']
+        }
+    }
+];
+
+const layoutMorelli = {
+    title: {
